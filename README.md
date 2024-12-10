@@ -58,8 +58,7 @@ Program ini sekarang mengimplementasikan empat konsep dasar OOP:
    ```
 2. **Menu Pilihan**  
    •	`(L)ihat`:  
-     - User diberikan pilihan dengan format lengkap (`y`) atau ringkas (`n`).  
-     - Format lengkap menampilkan nilai rata-rata, sedangkan ringkas hanya nama dan NIM.  
+   User diberikan pilihan dengan format lengkap (`y`) atau ringkas (`n`). Format lengkap menampilkan nilai rata-rata, sedangkan ringkas hanya nama dan NIM.  
    •	`(T)ambah`: Input data mahasiswa baru.  
    •	`(U)bah`: Ubah data mahasiswa berdasarkan nama.  
    •	`(H)apus`: Hapus data mahasiswa berdasarkan nama.  
