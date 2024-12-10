@@ -69,7 +69,7 @@ Program ini sekarang mengimplementasikan empat konsep dasar OOP:
    - Semua operasi (tambah, hapus, ubah, lihat) dilakukan dengan memanipulasi atribut `self.data_mahasiswa`.
   
 # Hasil Kode Program
-![]()
+![Latihan-8](https://github.com/tir890/Latihan-8/blob/a55fd9d4bb54930dba35b1964acddb377b625910/Screenshot%202024-12-10%20145115.png)
 
 # Gambar Flowchart
 ![]()
