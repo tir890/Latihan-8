@@ -74,4 +74,4 @@ Program ini sekarang mengimplementasikan empat konsep dasar OOP:
 ![Latihan-8](https://github.com/tir890/Latihan-8/blob/e45f3f5351dcf3c1fdd6a6d3795a1bb3e36d6cb4/Blank%20diagram%20(13).png)
 
 # Flowchart
-![]()
+![Latihan-8](https://github.com/tir890/Latihan-8/blob/7f23cf61bdd4fd94a424b58e79f7c7fe92b075b7/Blank%20diagram%20(14).png)
