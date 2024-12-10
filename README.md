@@ -10,73 +10,66 @@ Mata Kuliah: Bahasa Pemrograman
 
 ## Membuat Program Sederhana Daftar Mahasiswa dengan Object-Oriented Programming (OOP)
 
-Program ini memanfaatkan **Object-Oriented Programming (OOP)**, yaitu pendekatan pemrograman yang mengorganisasi kode dalam bentuk **class** dan **object**. Konsep OOP yang digunakan:  
-- **Class**: Wadah yang mendefinisikan atribut dan method. Di sini ada class `Mahasiswa`.  
-- **Method**: Fungsi yang ada di dalam class untuk melakukan tindakan tertentu (contoh: `tambah()`, `tampilkan()`, dll.).  
-- **Encapsulation**: Data mahasiswa disimpan dalam atribut khusus `self.data_mahasiswa` di dalam class, sehingga terorganisasi dengan baik.  
+### **Konsep Dasar Program**
+Program ini sekarang mengimplementasikan empat konsep dasar OOP:  
+- **Class dan Instance Class**: Class `Mahasiswa` dan subclass `MahasiswaLanjut` sebagai instance class-nya.  
+- **Enkapsulasi**: Atribut `self.data_mahasiswa` dilindungi dalam class. Data hanya bisa diakses lewat method seperti `tambah`, `hapus`, dll.  
+- **Inheritance**: Class `MahasiswaLanjut` mewarisi semua atribut dan method dari class `Mahasiswa`.  
+- **Polimorfisme**: Method `tampilkan` di `MahasiswaLanjut` bisa menampilkan data dalam dua format berbeda (lengkap dan ringkas), tergantung argumen yang diberikan.
 
 ---
-## Penjelasan Alur Kode
 
 ### **Fitur Program**
 1. **Tambah Data**  
    - Input: Nama, NIM, nilai tugas, UTS, dan UAS.  
-   - Data disimpan dalam dictionary dengan struktur:  
-     ```python
-     {
-         "nama": {
-             "nim": "nim_value",
-             "tugas": tugas_value,
-             "uts": uts_value,
-             "uas": uas_value
-         }
-     }
-     ```
+   - Data disimpan dalam dictionary `self.data_mahasiswa`.  
+
 2. **Tampilkan Data**  
-   - Menampilkan daftar mahasiswa dengan perhitungan nilai akhir (30% tugas, 35% UTS, 35% UAS).  
+   - **Format Lengkap**: Menampilkan semua data mahasiswa dengan nilai akhir.  
+   - **Format Ringkas**: Menampilkan hanya nama dan NIM mahasiswa.  
+
 3. **Hapus Data**  
-   - Menghapus data mahasiswa berdasarkan nama.  
+   - Menghapus data mahasiswa berdasarkan nama.
+
 4. **Ubah Data**  
-   - Mengubah nilai tugas, UTS, dan UAS mahasiswa berdasarkan nama.  
+   - Mengubah nilai tugas, UTS, dan UAS mahasiswa berdasarkan nama.
+
+5. **Informasi Tambahan (Class `MahasiswaLanjut`)**  
+   - Method `info` memberikan keterangan tambahan bahwa ini adalah class untuk mahasiswa tingkat lanjut.  
 
 ---
 
 ### **Atribut yang Digunakan**
-- **`self.data_mahasiswa`**: Dictionary untuk menyimpan data mahasiswa.  
-  - Key: Nama mahasiswa (string).  
-  - Value: Dictionary berisi NIM, tugas, UTS, dan UAS.  
-
-Contoh data:  
-```python
-{
-    "Tiara": {"nim": "12345", "tugas": 80, "uts": 80, "uas": 80}
-}
-```
+- **`self.data_mahasiswa`** (dalam class `Mahasiswa`):  
+  Dictionary untuk menyimpan data mahasiswa.  
+  Struktur:  
+  ```python
+  {
+      "Nama": {"nim": "NIM", "tugas": tugas_value, "uts": uts_value, "uas": uas_value}
+  }
+  ```
 
 ---
 
-### **Cara Menjalankan Program**
-1. **Salin kode ke editor Python**  
-   Gunakan IDE seperti **IDLE**, **VS Code**, atau **Jupyter Notebook**.
-   
-2. **Jalankan Program**  
-   Ketik perintah `python nama_file.py` di terminal/command prompt kalau pakai editor berbasis file.  
-
-3. **Interaksi dengan Program**  
-   Setelah program jalan, Anda akan disuguhkan pilihan menu:  
-   - `(L)ihat`: Menampilkan data mahasiswa.  
-   - `(T)ambah`: Menambah data mahasiswa.  
-   - `(U)bah`: Mengubah data mahasiswa berdasarkan nama.  
-   - `(H)apus`: Menghapus data mahasiswa berdasarkan nama.  
+### **Alur Program**
+1. Program mulai dengan membuat instance `MahasiswaLanjut`:
+   ```python
+   daftar_nilai = MahasiswaLanjut()
+   ```
+2. **Menu Pilihan**  
+   - `(L)ihat`:  
+     - User diberikan pilihan dengan format lengkap (`y`) atau ringkas (`n`).  
+     - Format lengkap menampilkan nilai rata-rata, sedangkan ringkas hanya nama dan NIM.  
+   - `(T)ambah`: Input data mahasiswa baru.  
+   - `(U)bah`: Ubah data mahasiswa berdasarkan nama.  
+   - `(H)apus`: Hapus data mahasiswa berdasarkan nama.  
    - `(K)eluar`: Keluar dari program.  
 
-4. **Input Data**  
-   Saat memilih tambah data (`T`), Anda harus input:  
-   - Nama  
-   - NIM  
-   - Nilai tugas  
-   - Nilai UTS  
-   - Nilai UAS  
+3. **Interaksi dengan Data**  
+   - Semua operasi (tambah, hapus, ubah, lihat) dilakukan dengan memanipulasi atribut `self.data_mahasiswa`.
+  
+# Hasil Kode Program
+![]()
 
-5. **Cek Hasil**  
-   Pilih `(L)` untuk menampilkan data dan lihat apakah data Anda sudah benar tersimpan.
+# Gambar Flowchart
+![]()
